@@ -1,0 +1,62 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "../vendor/shadcn-tailwind-4.13.0.css";
+
+:root {
+  --background: #fff9f7;
+  --foreground: #433842;
+  --card: #ffffff;
+  --card-foreground: #433842;
+  --popover: #ffffff;
+  --popover-foreground: #433842;
+  --primary: #b54569;
+  --primary-foreground: #ffffff;
+  --secondary: #fff0f3;
+  --secondary-foreground: #8e3552;
+  --muted: #f8f2f3;
+  --muted-foreground: #6f626b;
+  --accent: #eaf6ef;
+  --accent-foreground: #286354;
+  --destructive: #a9394b;
+  --border: #ebdfe2;
+  --input: #d9cbd1;
+  --ring: #b54569;
+  --chart-1: #b54569;
+  --chart-2: #70b89a;
+  --chart-3: #eab675;
+  --chart-4: #aa91c8;
+  --chart-5: #d8899d;
+  --radius: 0.9rem;
+  --font-sans: Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+* { box-sizing: border-box; }
+html { color-scheme: light; }
+body { margin: 0; background: radial-gradient(circle at 7% 4%, #fff0f1 0, transparent 30%), radial-gradient(circle at 93% 27%, #edf8f0 0, transparent 26%), var(--background); color: var(--foreground); font-family: var(--font-sans); }
+button, textarea, input { font: inherit; }
+button { cursor: pointer; }
